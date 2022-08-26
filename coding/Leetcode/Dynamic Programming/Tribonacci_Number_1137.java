@@ -1,5 +1,4 @@
-// https://leetcode.com/problems/n-th-tribonacci-number/
-package Leetcode.DP;
+package DP;
 
 import java.util.Arrays;
 
