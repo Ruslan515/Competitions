@@ -1,4 +1,4 @@
-
+# https://codeforces.com/edu/course/2/lesson/3/4/practice/contest/272262/problem/A
 def solving(s):
     n = len(s)
     z = [0]*n
