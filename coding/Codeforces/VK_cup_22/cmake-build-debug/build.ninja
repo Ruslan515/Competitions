@@ -49,8 +49,8 @@ cmake_ninja_workdir = /home/ruslan515/competitions/Competitions/coding/Codeforce
 
 build cmake_object_order_depends_target_VK_cup_22: phony || CMakeFiles/VK_cup_22.dir
 
-build CMakeFiles/VK_cup_22.dir/task_C.cpp.o: CXX_COMPILER__VK_cup_22_Debug /home/ruslan515/competitions/Competitions/coding/Codeforces/VK_cup_22/task_C.cpp || cmake_object_order_depends_target_VK_cup_22
-  DEP_FILE = CMakeFiles/VK_cup_22.dir/task_C.cpp.o.d
+build CMakeFiles/VK_cup_22.dir/task_C_v1.cpp.o: CXX_COMPILER__VK_cup_22_Debug /home/ruslan515/competitions/Competitions/coding/Codeforces/VK_cup_22/task_C_v1.cpp || cmake_object_order_depends_target_VK_cup_22
+  DEP_FILE = CMakeFiles/VK_cup_22.dir/task_C_v1.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/VK_cup_22.dir
   OBJECT_FILE_DIR = CMakeFiles/VK_cup_22.dir
@@ -63,7 +63,7 @@ build CMakeFiles/VK_cup_22.dir/task_C.cpp.o: CXX_COMPILER__VK_cup_22_Debug /home
 #############################################
 # Link the executable VK_cup_22
 
-build VK_cup_22: CXX_EXECUTABLE_LINKER__VK_cup_22_Debug CMakeFiles/VK_cup_22.dir/task_C.cpp.o
+build VK_cup_22: CXX_EXECUTABLE_LINKER__VK_cup_22_Debug CMakeFiles/VK_cup_22.dir/task_C_v1.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/VK_cup_22.dir
   POST_BUILD = :
