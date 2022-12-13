@@ -40,7 +40,7 @@ int main() {
             dp[0] = 0;
             dp[1] = 1;
             int global_max = dp[1];
-            for (int i = 2; i < maxDay; ++i) {
+            for (int i = 2; i < maxDay + 1; ++i) {
                 if ((count_commits[i] > 0) || (count_commits[i - 1] > 1)) {
                     dp[i] = dp[i - 1] + 1;
                 } else {
