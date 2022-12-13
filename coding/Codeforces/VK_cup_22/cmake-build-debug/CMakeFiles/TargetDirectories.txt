@@ -1,3 +1,0 @@
-/home/ruslan515/competitions/Competitions/coding/Codeforces/VK_cup_22/cmake-build-debug/CMakeFiles/VK_cup_22.dir
-/home/ruslan515/competitions/Competitions/coding/Codeforces/VK_cup_22/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/ruslan515/competitions/Competitions/coding/Codeforces/VK_cup_22/cmake-build-debug/CMakeFiles/rebuild_cache.dir
