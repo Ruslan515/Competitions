@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-
+z
 using namespace std;
 
 string notepad(string s, int n) {
