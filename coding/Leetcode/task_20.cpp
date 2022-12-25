@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <stack>
 
 using namespace std;
 
@@ -10,22 +11,28 @@ class Solution {
 public:
     bool isValid(string s) {
         bool ans = true;
-        int count_round = 0;
-        int count_curly = 0;
-        int count_sq = 0;
-        int n = s.size();
-        if (n % 2 == 0) {
-            for (int i = 0; i < n - 1; i += 2) {
-                bool t1 = !(s[i] == '(' && s[i + 1] == ')');
-                bool t2 = (!(s[i] == '{' && s[i + 1] == '}'));
-                bool t3 = (!(s[i] == '[' && s[i + 1] == ']'));
-
-                if (t1 && t2 && t3) {
-                    ans = false;
+        while (s.size() != 0) {
+            int i = 0;
+            int n = s.size();
+            for (; i < n - 1; ++i) {
+                bool t1 = (s[i] == '(' && s[i + 1] == ')');
+                bool t2 = (s[i] == '{' && s[i + 1] == '}');
+                bool t3 = (s[i] == '[' && s[i + 1] == ']');
+                if  (t1 || t2 || t3) {
+                    s.erase(i, 2);
                     break;
                 }
             }
+            int t = s.size();
+            if (i == n - 1) {
+                break;
+            }
         }
+
+        if (s.size() != 0) {
+            ans = false;
+        }
+
         return ans;
     }
 };
