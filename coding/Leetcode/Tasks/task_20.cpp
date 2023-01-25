@@ -1,4 +1,4 @@
-//
+// https://leetcode.com/problems/valid-parentheses/?envType=study-plan&id=data-structure-i
 // Created by ruslan515 on 23.12.22.
 //
 
