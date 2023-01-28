@@ -1,5 +1,5 @@
-// https://leetcode.com/problems/maximum-depth-of-binary-tree/?envType=study-plan&id=data-structure-i
-// Created by ruslan515 on 26.01.23.
+// https://leetcode.com/problems/path-sum/?envType=study-plan&id=data-structure-i
+// Created by ruslan515 on 27.01.23.
 //
 
 #include <bits/stdc++.h>
