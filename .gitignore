@@ -1,6 +1,9 @@
 */coding/Codeforces/VK_cup_22/cmake-build-debug
 */coding/Codeforces/VK_cup_22/CMakeLists.txt
 /coding/Codeforces/VK_cup_22
+.idea
+input.txt
+.gitignore
 cmake-build-debug
 CMakeLists.txt
 run.sh
