@@ -1,5 +1,5 @@
-// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
-// Created by ruslan515 on 29.01.23.
+// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
+// Created by ruslan515 on 19.02.23.
 //
 
 #include <bits/stdc++.h>
@@ -20,26 +20,14 @@ struct TreeNode {
 
 class Solution {
 public:
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        int val = root->val;
-        int val_p = p->val;
-        int val_q = q->val;
-        if (val_p > val && val_q > val) {
-            return lowestCommonAncestor(root->right, p, q);
-        } else if (val_p < val && val_q < val) {
-            return lowestCommonAncestor(root->left, p, q);
-        } else {
-            return root;
-        }
-    }
+    TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q) {
+        if (!root || root == p || root == q) return root;
+        TreeNode* left = lowestCommonAncestor(root->left, p, q);
+        TreeNode* right = lowestCommonAncestor(root->right, p, q);
+        return !left ? right : !right ? left : root;    }
 };
 
 void read_data(TreeNode *&root) {
-//    TreeNode *t1 = new TreeNode(1);
-//    TreeNode *t2 = new TreeNode(1, nullptr, t1);
-//
-//    root = t2;
-
     TreeNode *t1 = new TreeNode(2);
     TreeNode *t2 = new TreeNode(4);
     TreeNode *t3 = new TreeNode(3, t1, t2);
