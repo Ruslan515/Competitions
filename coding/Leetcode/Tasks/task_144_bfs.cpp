@@ -22,25 +22,29 @@ class Solution {
 public:
     vector<int> ans;
 
-    void recursive(TreeNode *root) {
-        if (root != nullptr) {
-            int temp = root->val;
-            ans.push_back(temp);
-        } else {
-            return;
+    void bfs(TreeNode *root) {
+        queue<TreeNode *> q;
+        q.push(root);
+        while (!q.empty()) {
+            TreeNode *curr;
+            int size_q = q.size();
+            for (int i = 0; i < size_q; ++i) {
+                curr = q.front();
+                q.pop();
+                int val = curr->val;
+                ans.push_back(val);
+                if (curr->left != nullptr) {
+                    q.push(curr->left);
+                }
+                if (curr->right != nullptr) {
+                    q.push(curr->right);
+                }
+            }
         }
-        if (root->left != nullptr) {
-            recursive(root->left);
-        }
-        if (root->right != nullptr) {
-            recursive(root->right);
-        }
-
-        return;
     }
 
     int getMinimumDifference(TreeNode *root) {
-        recursive(root);
+        bfs(root);
         sort(ans.begin(), ans.end());
         int n = ans.size();
         int minDiff = INT_MAX;
@@ -66,7 +70,7 @@ int main() {
     TreeNode *root;
     read_data(root);
     Solution solve;
-    vector<int> ans = solve.preorderTraversal(root);
+    solve.getMinimumDifference(root);
 
     return 0;
 }
