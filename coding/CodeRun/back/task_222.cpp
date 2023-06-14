@@ -20,5 +20,7 @@ int main() {
 
     }
 
+    cout << 2;
+
     return 0;
 }
