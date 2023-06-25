@@ -20,15 +20,43 @@ struct ListNode {
 class Solution {
 public:
     ListNode *reverseBetween(ListNode *head, int left, int right) {
+        if (head->next == nullptr) {
+            return head;
+        }
+        if (left == right) {
+            return head;
+        }
+        --left;
+        --right;
         int len = right - left + 1;
-        ListNode *current;
-        while (left) {
+        ListNode *current = head;
+        while (left > 1) {
             current = current->next;
             --left;
         }
 
-        ListNode *start = current;
+        ListNode *prev = nullptr, *nextNode, *last;
+        if (len == 2) {
+            nextNode = current->next;
+            last = current->next->next;
+            current->next = last;
+            nextNode->next = current;
+        }
+        ListNode *start = current->next;
 
+        prev = nullptr;
+        while (right) {
+            nextNode = start->next;
+            start->next = prev;
+            last = prev;
+            prev = start;
+            start = nextNode;
+            --right;
+        }
+        current->next->next = nextNode;
+        current->next = prev;
+
+        return head;
     }
 };
 
@@ -38,21 +66,31 @@ int main() {
     int left, right;
     ListNode *t1, *t2, *t3, *t4, *t5, *t6, *t7, *t8, *t9, *t10, *t11, *t12;
 
-    t5 = new ListNode(5);
-    t4 = new ListNode(4, t5);
-    t3 = new ListNode(3, t4);
-    t2 = new ListNode(2, t3);
-    t1 = new ListNode(1, t2);
+    t2 = new ListNode(5);
+    t1 = new ListNode(3, t2);
     head = t1;
 
-    t6 = new ListNode(5);
-    t7 = new ListNode(2, t5);
-    t8 = new ListNode(3, t4);
-    t9 = new ListNode(4, t3);
-    t10 = new ListNode(1, t2);
+    t9 = new ListNode(3);
+    t10 = new ListNode(5, t9);
     answer = t10;
-    left = 2, right = 4;
+    left = 1, right = 2;
     assert(answer == solve.reverseBetween(head, left, right));
+
+//    t5 = new ListNode(5);
+//    t4 = new ListNode(4, t5);
+//    t3 = new ListNode(3, t4);
+//    t2 = new ListNode(2, t3);
+//    t1 = new ListNode(1, t2);
+//    head = t1;
+//
+//    t6 = new ListNode(5);
+//    t7 = new ListNode(2, t6);
+//    t8 = new ListNode(3, t7);
+//    t9 = new ListNode(4, t8);
+//    t10 = new ListNode(1, t9);
+//    answer = t10;
+//    left = 2, right = 4;
+//    assert(answer == solve.reverseBetween(head, left, right));
 
     return 0;
 }
