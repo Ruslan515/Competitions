@@ -1,1 +1,0 @@
-https://coderun.yandex.ru/seasons/first_2023
