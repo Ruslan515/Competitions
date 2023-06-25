@@ -7,3 +7,4 @@ input.txt
 cmake-build-debug
 CMakeLists.txt
 run.sh
+coding/CodeRun/*
