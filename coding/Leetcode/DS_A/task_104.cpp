@@ -38,7 +38,7 @@ public:
             curVal = current->val;
             maxD = max(maxD, curVal);
             if (current->left != nullptr) {
-                current->left->val = curVal+1;
+                current->left->val = curVal + 1;
                 st.push(current->left);
             }
             if (current->right != nullptr) {
