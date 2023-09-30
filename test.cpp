@@ -2,13 +2,22 @@
 // Created by ruslan515 on 17.09.23.
 //
 
-int main(int argc, char **argv) {
-    struct xrow_header;
+#include <stdlib.h>
 
-    struct xrow_header *current_row;
-    struct xrow_header temp_row;
+int main() {
+    while (1) {
+        void *ptr = malloc(sizeof(int));
+    }
     return 0;
 }
+
+//int main(int argc, char **argv) {
+//    struct xrow_header;
+//
+//    struct xrow_header *current_row;
+//    struct xrow_header temp_row;
+//    return 0;
+//}
 
 //#include <stdio.h>
 //
