@@ -5,6 +5,5 @@
 input.txt
 .gitignore
 cmake-build-debug
-CMakeLists.txt
 run.sh
 coding/CodeRun/*
