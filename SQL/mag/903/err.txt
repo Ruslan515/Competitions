@@ -1,0 +1,2 @@
+column "date_stock_from"
+ERROR: invalid input syntax for type date: ""
