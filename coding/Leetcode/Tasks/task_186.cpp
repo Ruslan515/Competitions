@@ -25,13 +25,11 @@ public:
                 ++i;
             }
             // copy word
-            if (s[i] == ' ') {
-                len = i - startWord;
-                for (int j = 0; j < len; ++j) {
-                    tmp[idxTmp - len + j] = s[startWord + j];
-                }
-                idxTmp -= len;
+            len = i - startWord;
+            for (int j = 0; j < len; ++j) {
+                tmp[idxTmp - len + j + 1] = s[startWord + j];
             }
+            idxTmp -= len;
             // copy space
             while (i < n && s[i] == ' ') {
                 tmp[idxTmp] = s[i];
