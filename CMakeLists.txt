@@ -5,7 +5,8 @@ project(Competitions)
 set(CMAKE_CXX_STANDARD 17)
 
 #add_executable(Competitions coding/Leetcode/DS_A/task_1283.cpp)
-add_executable(Competitions coding/Leetcode/Tasks/task_1701.cpp)
+#add_executable(Competitions coding/Leetcode/Tasks/task_1474.cpp) linked list
+add_executable(Competitions coding/Leetcode/Tasks/task_1836.cpp)
 #add_executable(Competitions coding/Leetcode/BitManip/task_762.cpp)
 #add_executable(Competitions coding/Leetcode/prefix_sum/task_2574.cpp)
 #add_executable(Competitions coding/Leetcode/Biweekly_Contest_133/task_100346.cpp)
