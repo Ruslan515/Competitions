@@ -4,10 +4,10 @@ project(Competitions)
 
 set(CMAKE_CXX_STANDARD 17)
 
-#add_executable(Competitions coding/Leetcode/DS_A/task_374.cpp)
+add_executable(Competitions coding/Leetcode/DS_A/task_797.cpp)
 #add_executable(Competitions coding/Leetcode/Design/task_3242.cpp)
 #add_executable(Competitions coding/Leetcode/Tasks/task_1474.cpp) linked list
-add_executable(Competitions coding/Leetcode/Tasks/task_592.cpp)
+#add_executable(Competitions coding/Leetcode/Tasks/task_1894.cpp)
 #add_executable(Competitions coding/Leetcode/BitManip/task_762.cpp)
 #add_executable(Competitions coding/Leetcode/prefix_sum/task_2574.cpp)
 #add_executable(Competitions coding/Leetcode/Biweekly_Contest_135/task_100365.cpp)
