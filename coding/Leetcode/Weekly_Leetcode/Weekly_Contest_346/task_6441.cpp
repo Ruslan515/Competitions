@@ -1,4 +1,4 @@
-// https://leetcode.com/contest/weekly-contest-346/problems/lexicographically-smallest-palindrome/
+// https://leetcode.com/contest/weekly-contest-346/problems/find-the-punishment-number-of-an-integer/?slug=lexicographically-smallest-palindrome&region=global_v2
 // Created by ruslan515 on 21.05.23.
 //
 
