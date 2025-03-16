@@ -22,7 +22,6 @@ public class Maximum_Length_of_Subarray_With_Positive_Product_1567 {
         }
         return ans;
 
-        return global_max;
     }
 
     public static void main(String[] args) {
