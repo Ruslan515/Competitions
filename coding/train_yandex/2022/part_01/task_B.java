@@ -13,7 +13,6 @@ public class task_B {
         while (label) {
             s = s.replace("/../", "/");
             s = s.replace("//", "/");
-            label 
         }
         if (s.charAt(s.length() - 1) == '/' && s.length() > 1)
             s = s.substring(0, s.length() - 1);
