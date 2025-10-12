@@ -1,6 +1,7 @@
 package leetcode.tasks;
 
 
+import java.util.HashSet;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -10,6 +11,7 @@ public class task_3005 {
             int answer = 0;
             int maxFrequency = 0;
             Map<Integer, Integer> frequency = new HashMap<>();
+            HashMap<Integer, Integer> map = new HashMap<>();
             for (int num : nums) {
                 frequency.put(num, frequency.getOrDefault(num, 0) + 1);
                 maxFrequency = Math.max(maxFrequency, frequency.get(num));
