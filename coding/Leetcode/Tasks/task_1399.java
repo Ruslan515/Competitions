@@ -1,6 +1,7 @@
+package leetcode.tasks;
+
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 
 //https://leetcode.com/problems/count-largest-group/?envType=daily-question&envId=2025-04-23

@@ -1,3 +1,5 @@
+package leetcode.tasks;
+
 public class task_3392 {
     class Solution {
         public int countSubarrays(int[] nums) {
